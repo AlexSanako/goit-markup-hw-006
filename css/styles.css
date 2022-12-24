@@ -288,6 +288,7 @@ address{
 }
 
 .modal {
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -300,7 +301,6 @@ address{
     background-color: #FFFFFF;
 }
 .form-modal {
-    padding: 0px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -308,7 +308,6 @@ address{
 }
 
 .modal-tittle {
-    padding: 40px 40px 0 40px;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -328,10 +327,10 @@ address{
 .input-modal {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 10px;
     width: 448px;
     height: 40px;
     padding: 0 12px 0 40px;
+    outline: none;
     transition-property: border-color; 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);;
@@ -358,9 +357,7 @@ address{
 .comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
-/* textarea {
-    resize: none;
-} */
+
 .modal-check {
     display: flex;
     margin: auto;
@@ -373,6 +370,10 @@ address{
     appearance: none;
 }
 .checkbox-icon {
+    position: absolute;
+    top: 4px;
+    right: 100%;
+    transform: translateX(10%);
     fill: transparent;
     border-radius: 2px;
     border: 2px solid var(--tittle-text-color);
@@ -384,7 +385,8 @@ address{
     border-color: var(--accent-color);
 }
 .check-text {
-    padding-left: 7px;
+    position: relative;
+    padding-left: 8px;
     margin: auto;
     font-weight: 400;
     font-size: 14px;
@@ -397,6 +399,7 @@ address{
 }
 .modal-field {
     position: relative;
+    margin-bottom: 10px;
 }
 .input-icon-form {
     fill: var(--tittle-text-color);
@@ -452,6 +455,10 @@ address{
     cursor: pointer;
 }
 .modal-icon {
+    position: absolute;
+    top: 6px;
+    right: 50%;
+    transform: translateX(50%);
     fill: var(--black-color);
     transition-property: fill; 
     transition-duration: 250ms;
@@ -939,6 +946,7 @@ address{
     padding: 15px 16px;
     background-color: transparent;
     border-radius: 4px;
+    color: var(--primary-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition-property: background-color, border-color;
